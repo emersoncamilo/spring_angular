@@ -1,0 +1,25 @@
+# Compiled output
+./crud-angular/dist
+./crud-angular/tmp
+./crud-angular/out-tsc
+./crud-angular/bazel-out
+
+# Node
+/crud-angular/node_modules/
+/crud-angular/npm-debug.log
+/crud-angular/yarn-error.log
+
+# Miscellaneous
+/crud-angular/.angular/cache/
+/crud-angular/.sass-cache/
+
+/crud-spring/HELP.md
+/crud-spring/target/
+/crud-spring/.mvn/wrapper/maven-wrapper.jar
+/crud-spring/!**/src/main/**/target/
+/crud-spring/!**/src/test/**/target/
+
+### VS Code ###
+.vscode/
+/crud-angular/.vscode/
+/crud-spring/.vscode/

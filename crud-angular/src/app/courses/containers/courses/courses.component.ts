@@ -5,8 +5,8 @@ import { catchError, of } from 'rxjs';
 import { Observable } from 'rxjs/internal/Observable';
 import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/error-dialog.component';
 
-import { Course } from '../model/course';
-import { CoursesService } from '../services/courses.service';
+import { Course } from '../../model/course';
+import { CoursesService } from '../../services/courses.service';
 
 @Component({
   selector: 'app-courses',
@@ -15,7 +15,6 @@ import { CoursesService } from '../services/courses.service';
 })
 export class CoursesComponent {
   courses$: Observable<Course[]>;
-  displayedColumns = ['_id', 'name', 'category', 'actions'];
 
   constructor(
     private coursesService: CoursesService,
@@ -43,9 +42,6 @@ export class CoursesComponent {
   }
 
   onAdd() {
-    console.log('onAdd');
     this.router.navigate(['new'], {relativeTo:this.route});
-
-
   }
 }

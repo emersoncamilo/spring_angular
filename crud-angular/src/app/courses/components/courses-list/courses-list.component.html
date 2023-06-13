@@ -22,6 +22,7 @@
 
   <!-- actions Column -->
   <ng-container matColumnDef="actions">
+
     <mat-header-cell *matHeaderCellDef  class="action-collumn-reader">
       <button (click)="onAdd()" mat-mini-fab color="accent" aria-label="Add course">
         <mat-icon>add</mat-icon>
@@ -29,8 +30,8 @@
     </mat-header-cell>
 
     <mat-cell *matCellDef="let course" class="action-collumn">
-      <button mat-icon-button color="primary" aria-label="Edit course">
-        <mat-icon>edit</mat-icon>
+      <button>
+        <mat-icon  (click)="onEdit(course)" mat-icon-fab color="primary" aria-label="Edit course">edit</mat-icon>
       </button>
 
       <button mat-icon-button color="warn" aria-label="Delete course">
